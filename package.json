@@ -1,7 +1,7 @@
 {
   "name": "auto-grader",
-  "version": "0.1.1",
-  "homepage": "https://smartshala.github.io",
+  "version": "0.1.2",
+  "homepage": "https://grader.smartshala.live",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
