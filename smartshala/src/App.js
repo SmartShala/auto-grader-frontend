@@ -6,7 +6,7 @@ function App() {
 return(
 <Router>
   <Routes>
-    <Route path="/" element={<Land/>} />
+  <Route path="/" element={<Land/>} />
   </Routes>
 </Router>
 )
