@@ -1,5 +1,6 @@
 import React from "react"
 import axios from "axios"
+import "../styles/login.css"
 export default function Login(props){
     const[useremail,setUseremail]=React.useState("")
     // React.useEffect(()=>{
@@ -42,15 +43,18 @@ export default function Login(props){
     
     
     return(
-       <form onSubmit={handlesubmit}>
+        <form onSubmit={handlesubmit}>
+        <div className="login"> 
            <input
                type="text"
                placeholder="Email"
                onChange={handleChange}
                name="useremail"
                value={useremail}
+               className="login-in"
             />
-            <button>Login</button>   
-       </form> 
+            <button className="login-btn">Next</button> 
+            </div>     
+       </form>  
     )
 }
