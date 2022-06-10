@@ -5,15 +5,24 @@ import Signin from "./signin"
 
 function Land() {
 const[userData,setUserData]=React.useState()
+const[loading,setLoading]=React.useState(false)
  console.log(userData)
-  if(!userData){
+//  console.log(loading)
+  if(loading){
     return(
-      <Login Data={setUserData} />
+      <div className="load">
+        Loading....
+      </div>
+    )
+  }
+  else if(!userData){
+    return(
+      <Login Data={setUserData} Load={setLoading} isLoading={loading}/>
       )
   }
   else if(userData.is_new){
     return(
-    <Signup/>
+    <Signup  isLoading={loading}/>
     )
   }
    else if(!userData.is_new){

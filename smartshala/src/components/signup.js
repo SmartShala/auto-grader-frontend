@@ -1,5 +1,5 @@
 import React from "react"
-export default function Signup(){
+export default function Signup(props){
     const[password,setPassword]=React.useState("")
     function handlesubmit(){
         console.log(password)
@@ -9,6 +9,8 @@ export default function Signup(){
         setPassword(event.target.value)
     }
     return(
+    <div className="container">
+    {props.isLoading && <div className="load">Loading......</div>}
     <form onSubmit={handlesubmit}>
         <div className="land">
         <input
@@ -36,5 +38,6 @@ export default function Signup(){
         <button className="land-btn">Signup</button>
         </div>
     </form> 
+    </div>
     )
 }

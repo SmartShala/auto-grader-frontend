@@ -16,8 +16,10 @@ export default function Login(props){
     //     }
     //     getNew()
     // },[])
+    console.log(props.isLoading)
     let handlesubmit=async(e)=>{
         e.preventDefault()
+        props.Load(true)
         const requestOptions={
             // mode: 'no-cors',
             // Origin:'http://localhost:3000',
@@ -31,6 +33,8 @@ export default function Login(props){
         },requestOptions)
         .then(response=>{
            props.Data(response.data)
+           props.Load(false)
+        console.log(props.isLoading)
         })
         .catch(err=>{
             console.log(err.message)
