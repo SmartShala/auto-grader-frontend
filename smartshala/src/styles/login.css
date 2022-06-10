@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 
-.login {
+.land {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@ html {
     border: 2px solid black;
     border-radius: 10px;
     width: 20vw;
-    min-width: 380px;
+    min-width: 315px;
     height: 75vh;
     min-height: 600px;
     margin: auto;
@@ -29,7 +29,7 @@ html {
     border-radius: 20px;
 }
 
-.login-btn {
+.land-btn {
     width: 40%;
     font-size: 1.5rem;
     height: 40px;
@@ -38,9 +38,10 @@ html {
     border-radius: 12px;
     color: white;
     font-weight: 800;
+
 }
 
-.login-in {
+.land-in {
     width: 70%;
     height: 30px;
     font-size: 1rem;

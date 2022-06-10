@@ -11,11 +11,13 @@ export default function Signin(){
 
     return(
         <form onSubmit={handlesubmit}>
+            <div className="land">
             <input
                 type="text"
                 placeholder="Email"
                 name="useremail"
                 // value={useremail}
+                className="land-in"
             />
             <input
                 type="password"
@@ -23,8 +25,10 @@ export default function Signin(){
                 onChange={handleChange}
                 value= {password}
                 name="password"
+                className="land-in"
             />  
-            <button>Signin</button>
+            <button className="land-btn">Signin</button>
+            </div>
         </form>  
 
     )

@@ -10,11 +10,13 @@ export default function Signup(){
     }
     return(
     <form onSubmit={handlesubmit}>
+        <div className="land">
         <input
             type="text"
             placeholder="Email"
             name="useremail"
             //value={useremail}
+            className="land-in"
         />
         <input
             type="text"
@@ -22,14 +24,17 @@ export default function Signup(){
             onChange={handleChange}
             value= {password}
             name="password"
+            className="land-in"
         />  
         <input
             type="text"
             placeholder="Confirm password"
             value={password}
             name="confrirmpass"
+            className="land-in"
         /> 
-        <button>Signup</button>
+        <button className="land-btn">Signup</button>
+        </div>
     </form> 
     )
 }

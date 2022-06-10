@@ -44,16 +44,16 @@ export default function Login(props){
     
     return(
         <form onSubmit={handlesubmit}>
-        <div className="login"> 
+        <div className="land"> 
            <input
                type="text"
                placeholder="Email"
                onChange={handleChange}
                name="useremail"
                value={useremail}
-               className="login-in"
+               className="land-in"
             />
-            <button className="login-btn">Next</button> 
+            <button className="land-btn">Next</button> 
             </div>     
        </form>  
     )
